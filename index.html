@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Library Management System</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 40px;
+      background-color: #f4f4f4;
+    }
+
+    h1 {
+      text-align: center;
+    }
+
+    form {
+      background: white;
+      padding: 20px;
+      margin: 20px auto;
+      max-width: 400px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    input, select, button {
+      width: 100%;
+      padding: 10px;
+      margin-top: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    button {
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+    }
+
+    button:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Library Management System</h1>
+
+  <!-- Add New Book -->
+  <form id="addBookForm">
+    <h2>Add New Book</h2>
+    <input type="text" name="title" placeholder="Book Title" required />
+    <input type="text" name="author" placeholder="Author" required />
+    <input type="text" name="isbn" placeholder="ISBN" required />
+    <button type="submit">Add Book</button>
+  </form>
+
+  <!-- Search Book -->
+  <form id="searchBookForm">
+    <h2>Search Book</h2>
+    <input type="text" name="query" placeholder="Enter book title or author" required />
+    <button type="submit">Search</button>
+  </form>
+
+  <!-- Check Out Book -->
+  <form id="checkoutForm">
+    <h2>Check Out Book</h2>
+    <input type="text" name="isbn" placeholder="Enter ISBN" required />
+    <input type="text" name="member" placeholder="Member Name" required />
+    <button type="submit">Check Out</button>
+  </form>
+
+  <!-- Return Book -->
+  <form id="returnForm">
+    <h2>Return Book</h2>
+    <input type="text" name="isbn" placeholder="Enter ISBN" required />
+    <button type="submit">Return</button>
+  </form>
+
+</body>
+</html>
