@@ -1,6 +1,10 @@
-dictionary={"python":"A programming Language"
-            "function" : "information, in digital form"}
-while true:
-      word = input("search word(for exit): ", lower);
-      if word == "exit" : break
-      print(dictionary.get(word, "word not found");
+dictionary = {
+    "python": "A programming language",
+    "function": "Information, in digital form"
+}
+
+while True:
+    word = input("Search word (type 'exit' to quit): ").lower()
+    if word == "exit":
+        break
+    print(dictionary.get(word, "Word not found"))
