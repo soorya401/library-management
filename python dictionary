@@ -1,0 +1,6 @@
+dictionary={"python":"A programming Language"
+            "function" : "information, in digital form"}
+while true:
+      word = input("search word(for exit): ", lower);
+      if word == "exit" : break
+      print(dictionary.get(word, "word not found");
